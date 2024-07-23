@@ -1,0 +1,159 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales de la página */
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.grid_container {
+    background: #fff;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.header h1 {
+    flex-grow: 1;
+    text-align: start;
+}
+
+.header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header nav a {
+    padding: 10px;
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header nav a:hover {
+    background-color: #222;
+    border-radius: 5px;
+    color: #eee;
+}
+
+.main {
+    grid-area: main;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main section {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    grid-area: footer;
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: tomato;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-list li {
+    background: #444;
+    color: #fff;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.contact-list a:hover {
+    background: #c0bebed0;
+}
+
+.contact-list img {
+    width: 30px;
+    height: 30px;
+    margin-left: 0.5rem;
+}
